@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.epicodus.myspace.profileActivity">
+    tools:context="com.epicodus.myspace.profileActivity"
+    android:id="@+id/his">
 
     <TextView
         android:layout_width="match_parent"
@@ -18,4 +19,35 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Blog post"
+        android:id="@+id/blogButton"
+        android:layout_marginTop="153dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/blogInput"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BlogTextView"
+        android:layout_below="@+id/blogInput"
+        android:layout_alignLeft="@+id/blogInput"
+        android:layout_alignStart="@+id/blogInput"
+        android:layout_marginTop="46dp"
+        android:layout_alignRight="@+id/blogInput"
+        android:layout_alignEnd="@+id/blogInput"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
