@@ -13,12 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Hello, Jake &amp; Kevin!"
-        android:id="@+id/textView"
+        android:text="Epicodus"
+        android:id="@+id/homeHeading"
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:layout_marginTop="62dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -27,76 +26,142 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
+        android:id="@+id/homeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/friendButton"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/profileButton"
+        android:layout_above="@+id/friendButton"
+        android:layout_alignRight="@+id/pictureButton"
+        android:layout_alignEnd="@+id/pictureButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
-        android:id="@+id/button2"
-        android:layout_alignBottom="@+id/button"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Friends"
-        android:id="@+id/button3"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+        android:id="@+id/friendButton"
+        android:layout_above="@+id/pictureButton"
+        android:layout_alignRight="@+id/pictureButton"
+        android:layout_alignEnd="@+id/pictureButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pictures"
         android:id="@+id/pictureButton"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_toRightOf="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_below="@+id/textView"
+        android:background="@drawable/kevin"
+        android:layout_below="@+id/homeHeading"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="@drawable/kevin"
-        android:layout_marginBottom="297dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_marginRight="70dp"
-        android:layout_marginEnd="70dp" />
+        android:layout_marginRight="175dp"
+        android:layout_marginEnd="175dp"
+        android:layout_above="@+id/editText" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textNoSuggestions"
         android:ems="10"
         android:id="@+id/editText"
-        android:text="Male       32       "
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_marginLeft="35dp"
-        android:layout_marginStart="35dp"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:text="Male"
+        android:textSize="18sp"
+        android:background="@android:drawable/picture_frame"
+        android:textColor="#5e5e5e"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text=" Portland, OR"
+        android:text="Portland, OR"
         android:id="@+id/textView2"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:background="@android:drawable/picture_frame"
+        android:textColor="#5e5e5e"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Age 32"
+        android:id="@+id/textView4"
+        android:background="@android:drawable/picture_frame"
+        android:textColor="#5e5e5e"
+        android:layout_above="@+id/homeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cam"
+        android:id="@+id/cameraButton"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/homeHeading"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="122dp"
+        android:layout_alignParentEnd="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="90dp"
+        android:layout_above="@+id/editText"
+        android:gravity="fill_horizontal|top|left"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Status:"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp" />
 
 </RelativeLayout>

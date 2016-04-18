@@ -7,7 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    private Button mhomeButton;
+    private Button mprofileButton;
     private Button mpictureButton;
+    private Button mfriendButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,5 +25,36 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mprofileButton = (Button) findViewById(R.id.profileButton);
+        mprofileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, profileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mhomeButton = (Button) findViewById(R.id.homeButton);
+        mhomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+
+        });
+
+        mfriendButton = (Button) findViewById(R.id.friendButton);
+        mfriendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FriendActivity.class);
+                startActivity(intent);
+            }
+
+        });
+
+
     }
 }
