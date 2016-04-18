@@ -35,6 +35,7 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/blogInput"
+        android:theme="@style/EditTextStyle"
         android:textColor="@color/colorPrimary"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

@@ -119,11 +119,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cam"
-        android:id="@+id/cameraButton"
+        android:id="@+id/button_image"
         android:src="@android:drawable/ic_menu_camera"
         android:layout_alignBottom="@+id/imageView"
         android:layout_alignParentLeft="true"
@@ -134,7 +133,8 @@
         android:layout_marginRight="31dp"
         android:layout_marginEnd="31dp"
         android:layout_marginTop="122dp"
-        android:layout_alignParentEnd="false" />
+        android:onClick="takePicture"
+        android:text="Take a picture!"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -163,5 +163,14 @@
         android:layout_toEndOf="@+id/textView2"
         android:layout_marginLeft="62dp"
         android:layout_marginStart="62dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageview"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:minHeight="50dp" />
 
 </RelativeLayout>
